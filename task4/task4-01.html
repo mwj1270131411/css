@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task4登录页面</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+</head>
+
+<style type="text/css">
+*{
+	padding: 0;
+	margin:0;
+}
+
+
+.header{
+	width: 100%;
+	height: 50px;
+	background-color: rgba(95, 192, 205, 1);
+	position: fixed;
+	top:0px;
+}
+
+.login{
+	width: 100%;
+	height: 50px;
+	background-color: rgba(95, 192, 205, 1);
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+}
+
+.head{
+	color:white;
+	font-size: 20px;
+	height: 50px;
+	line-height: 50px;
+}
+.reg{
+	float: left;
+	width:17%;
+	text-align: left;
+	padding-left: 10px;
+}
+.log{
+	width:60%;
+	text-align: center;
+	float: left;
+	text-align: center;
+}
+
+.close{
+	width:17%;
+	float: right;
+	text-align: right;
+	padding-right: 10px;
+}
+.content{
+	margin-top:50px;
+}
+.mobile_text{
+	width: 100%;
+	height: 50px;
+}
+
+.login_name{
+	float: left;
+	width: 100%;
+	margin-right: -100px;
+	height: 50px;
+	border: none;
+	float: right;
+	padding-left: 10px;
+	font-size: 1em;
+}
+.mobile_img{
+	float: left;
+	display: block;
+	width:80px;
+	height: 48px;
+	background: url(img/iphone@2x.png) no-repeat;
+	background-size: 15px 25px;
+	background-position: center;
+	position: center;
+}
+
+.line{
+	width:100%;
+	height:10px;
+	background: #EFF0F4;
+	border:none;
+
+}
+.line-h{
+	float: left;
+	height: 30px;
+	border: 1px solid #EFF0F4;
+	margin-top:10px;
+}
+
+.passwd_img{
+	float: left;
+	display: block;
+	width:80px;
+	height: 48px;
+	background: url(img/locked2@2x.png) no-repeat;
+	background-size: 15px 25px;
+	background-position: center;
+	position: center;
+}
+.password{
+	float: left;
+	width: 100%;
+	margin-right: -100px;
+	height: 50px;
+	border: none;
+	float: right;
+	padding-left: 10px;
+	font-size: 1em;
+}
+
+.forgetpwd{
+	color: rgba(95, 192, 205, 1);
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+</style>
+
+<body>
+	
+<div class="header">
+	<div class="reg head">注册</div>
+	<div class="log head">登录</div>
+	<div class="close head" >关闭</div>
+</div>
+
+<div class="content">
+	<hr class="line" />
+	<div class="mobile_text">
+		<span class="mobile_img"></span>
+		<div class="line-h"></div>
+		<input class="login_name" type="number" name="login_name" placeholder="请输入手机号">
+	</div>
+	<hr class="line" />
+	<div class="pasw_text">
+		<span class="passwd_img"></span>
+		<div class="line-h"></div>
+		<input class="password" type="password" name="password" placeholder="请输入密码">
+	</div>
+	
+
+</div>
+<hr class="line" />
+<div class="login">
+	登录
+</div>
+
+<a href="" class="forgetpwd">
+	忘记密码？
+</a>
+
+</body>
+</html>
