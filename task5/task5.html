@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task5护工页面</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+</head>
+<style type="text/css">
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/* 头部 */
+.head{
+	position:fixed;
+	top:0; 
+	width: 100%;
+	height: 60px;
+	background-color:  rgba(95, 192, 205, 1);
+	z-index: 100;
+}
+.close{
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: url(img/back.png) no-repeat ;
+	background-size: 20px 20px;
+	position: absolute;
+	left: 10px;
+	top:50%;
+	margin-top:-10px;
+}
+.title{
+	float: left;
+	width: 80px;
+	height: 25px;
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	top:0;
+	left: 0;
+	right:0;
+	bottom: 0;
+	margin:auto;
+}
+
+/* 用户头像信息 */
+.user-back{
+	width: 100%;
+	height: 200px;
+	margin-top:60px;
+	position: relative;
+	background: url(img/background.png) no-repeat; 
+	background-size: 100% 200px;
+}
+.mask{
+	width: 100%;
+	height: 200px;
+	background: #000 ;
+	opacity:0.3;
+	filter:opacity(30);
+	z-index: 1;
+	margin-top:60px;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+.user-div{
+	width: 100%;
+	height: 130px;
+	position: absolute;
+	top:50%;
+	margin-top:-65px;
+}
+.avatar{
+	width:100px;
+	height: 100px;
+	background: url(img/avatar.png) no-repeat;
+	background-size: 100px 100px; 
+	border-radius: 50%;
+	position: absolute;
+	top:50%;
+	margin-top:-50px;
+	margin-left: 30px;
+	z-index: 2;
+}
+.user{
+	width: 200px;
+	height: 80px;
+	margin-left: 160px;
+	position: relative;
+	top:50%;
+	margin-top:-25px;
+	color:#fff;
+	z-index: 2;
+}
+.user-info{
+	font-size: 20px;
+}
+.user-addr{
+	margin-top:8px;
+}
+.user-addr-img{
+	background:url(img/Shape4@2x.png) no-repeat;
+	background-size: 15px 18px;
+	width:15px;
+	height: 18px;
+	float: left;
+}
+.user-addr-text{
+	margin-left: 10px;
+	float: left;
+	font-size:16px;
+	overflow: hidden;
+}
+
+/* 专业技能 */
+.zhuan{
+	height: 20px;
+	font-size: 20px;
+	line-height: 20px;
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left:2px solid rgba(95, 192, 205, 1);
+	margin-top:15px;
+	margin-bottom: 15px;
+}
+.line{
+	width: 100%;
+	border-bottom: 1px solid #efefef;
+}
+
+.row-line{
+	margin-left: 10px;
+	border-bottom:1px solid #efefef;
+	padding: 5px;
+	position: relative;
+}
+
+.start{
+	width: 15px;
+	height: 15px;
+}
+.start-span{
+	font-size: 18px;
+	word-wrap: break-word; 
+	word-break: normal;
+	color: #999999;
+}
+
+.row{
+	width: 100%;
+	position: relative;
+	top:50%;
+}
+.row-star{
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	position: relative;
+	top:50%;
+}
+
+.row-left{
+	color: #999999;
+	float: left;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	border-right: 1px solid #efefef;
+	position: absolute;
+	top:0;
+	left:0;
+	bottom: 0;
+	right:0;
+	margin-top:auto;
+	margin-bottom: auto;
+
+}
+.row-right{
+	line-height: 30px;
+	margin-left: 100px;
+}
+
+.content{
+	margin-bottom: 60px;
+}
+/* 脚 */
+.foot{
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	bottom: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: #fff;
+}
+
+.footleft{
+	width: 45%;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	color:rgba(95, 192, 205, 1);
+	text-align: center;
+	border: 2px solid  rgba(95, 192, 205, 1);
+	background: #fff;
+	position: absolute;
+	top:50%;
+	margin-top: -25px;
+	border-radius:5px;
+}
+.footright{
+	width: 45%;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	color:#fff;
+	text-align: center;
+	border: 2px solid  rgba(95, 192, 205, 1);
+	background:  rgba(95, 192, 205, 1);
+	position: absolute;
+	top:50%;
+	right: 10px;
+	margin-top: -25px;
+	border-radius:5px;
+	margin-right: 10px;
+}
+</style>
+<body>
+
+<div class="head" >
+	<div class="close"></div>
+	<div class="title">个人主页</div>
+</div>
+
+<div class="mask">
+</div>
+
+<div class="user-back">
+	<div class="user-div">
+		<div class="avatar"></div>
+		<div class="user">
+			<div class="user-info">徐世林 55岁</div>
+			<div class="user-addr">
+				<div class="user-addr-img"></div>
+				<div class="user-addr-text">京城·四方·报纸林</div>
+			</div>
+		</div>
+	</div> 
+</div>
+
+
+<div class="content">
+	<div class="zhuan">
+		专业技能
+	</div>
+	
+	<div class="line"></div>
+	<div class="row-line">
+		<div class="row-star">
+			<img class="start" src="img/start.png"> <span class="start-span">住家</span> <span class=""></span>
+			<img class="start" src="img/start.png"> <span class="start-span">不含餐</span> <span class=""></span>
+		</div>
+	</div>
+	<div class="row-line">
+		<div class="row">
+			<div class="row-left">从业年限:</div>
+			<div class="row-right">0~3年</div>
+		</div>
+	</div>
+
+	<div class="row-line">
+		<div class="row">
+			<div class="row-left">工作时间:</div>
+			<div class="row-right">全天</div>
+		</div>
+	</div>
+
+	<div class="row-line">
+		<div class="row">
+			<div class="row-left">服务价格:</div>
+			<div class="row-right">25元/小时</div>
+		</div>
+		
+	</div>
+	<div class="row-line">
+		<div class="row">
+			<div class="row-left">自我介绍:</div>
+			<div class="row-right">可以洗衣服做饭照顾老人；可以洗衣服做饭照顾老人；可以洗衣服做饭照顾老人；可以洗衣服做饭照顾老人；可以洗衣服做饭照顾老人；可以洗衣服做饭照顾老人；可以洗衣服做饭照顾老人；</div>
+		</div>
+		
+	</div>
+</div>
+
+<div class="foot">
+	<div class="footleft">留言</div>
+	<div class="footright">电话联系</div>
+
+</div>
+
+</body>
+</html>
